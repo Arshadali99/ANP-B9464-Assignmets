@@ -1,0 +1,27 @@
+public abstract class abs_Demo {
+
+	public static void demo()
+	{
+		System.out.println("Hii from demo method");
+	}
+	public abstract void demo1();
+	
+}
+-----------------------------------
+
+public class abs1 extends abs_Demo {
+
+	public static void main(String[] args) {
+		
+		abs1 obj=new abs1();
+		obj.demo1();
+		obj.demo();
+	}
+
+	@Override
+	public void demo1() {
+		// TODO Auto-generated method stub
+		System.out.println("Hiii this is from abstract method");
+	}
+
+}
