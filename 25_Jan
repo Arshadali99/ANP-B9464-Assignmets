@@ -1,0 +1,98 @@
+Pro1:
+-----
+
+public interface Inf_demo {
+	public void demo();
+
+}
+-------
+import java.util.Scanner;
+
+public class inf_demo1 implements Inf_demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		inf_demo1 obj=new inf_demo1();
+		hi();
+		obj.demo();
+		
+	}
+	public static void hi()
+	{
+		System.out.println("hiiii");
+	}
+	@Override
+	public void demo() {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num=sc.nextInt();
+		int s=0,r;
+		while(num>0)
+		{
+			r=num%10;
+			s=s+r;
+			num=num/10;
+		}
+		System.out.println("The sum of digit is ="+s);
+	}
+
+}
+------
+Prog2
+
+
+public interface Cir_inf {
+
+	public void area();
+	public void cal();
+}
+
+-------
+
+public class Circle_demo implements Cir_inf{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Circle_demo obj=new Circle_demo();
+		obj.area();
+		obj.cal();
+	}
+
+	@Override
+	public void area() {
+		// TODO Auto-generated method stub
+		System.out.println("The area of circle");
+	}
+
+	@Override
+	public void cal() {
+		// TODO Auto-generated method stub
+		System.out.println("The Circumfrance of circle");
+	}
+
+}
+-------
+
+public class rect_demo implements Cir_inf {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		rect_demo obj=new rect_demo();
+		obj.area();
+		obj.cal();
+	}
+
+	@Override
+	public void area() {
+		// TODO Auto-generated method stub
+		System.out.println("Arae of rectangle");
+	}
+
+	@Override
+	public void cal() {
+		// TODO Auto-generated method stub
+		System.out.println("Peremeter of rectangle");
+	}
+
+}
