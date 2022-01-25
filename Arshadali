@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public interface Cir_inf {
+	public void area();
+	public void cal();
+}
+
+public class Circle_demo implements Cir_inf {
+	Scanner sc=new Scanner(System.in);
+	int a=sc.nextInt();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Circle_demo obj=new Circle_demo();
+		obj.area();
+		obj.cal();
+	}
+
+	public void area() {
+		// TODO Auto-generated method stub
+		int area =(int) (3.14*a*a);
+		System.out.println("The area of circle "+area);
+	}
+
+	public void cal() {
+		// TODO Auto-generated method stub
+		int circumference=(int) (2*3.14*a);
+		System.out.println("The Circumfrance of circle "+circumference);
+		
+	}
+
+}
+
+
+
